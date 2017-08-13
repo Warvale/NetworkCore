@@ -1,0 +1,14 @@
+main: net.warvale.network.Main
+name: NetworkCore
+author: Warvale Development Team
+version: 1.0
+description: The core for the Warvale Network
+commands:
+  vale:
+    description: Set/Get a players's vales
+    permission: warvalenetwork.vale
+  payvales:
+    description: Pay a user some vales
+  valeitemininv:
+    description: Toggle whether vale emeralds appear in a player's inventory.
+    permission: warvalenetwork.vale
