@@ -23,6 +23,7 @@ public class PlayerListener implements Listener {
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event){
         Player player = event.getPlayer();
+        player.setPlayerListName(player.getDisplayName());
         try {
             PreparedStatement stmt = plugin.getDb().getConnection().prepareStatement("SELECT * FROM vale_eco WHERE uuid = '"+player.getUniqueId().toString()+"' LIMIT 1");
             ResultSet set = stmt.executeQuery();
